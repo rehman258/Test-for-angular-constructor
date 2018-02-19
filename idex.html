@@ -1,0 +1,66 @@
+<html >
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<script src="stylejs.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="app">
+
+    
+
+   <div id="container" ng-controller="tocontrol">
+     <li ng-repeat="item in myworks">
+      <input type="checkbox" ng-model="item.edildi">
+
+      <span ng-class="{'done':item.edildi}">{{item.edildi}}</span>
+      
+     </li>
+   </div>
+
+
+
+
+
+   <!-- Add new Student
+   <div ng-controller="mycont">
+    <form ng-submit = "elaveet()">
+           <input type="text" ng-model="name">
+           <input type="text" ng-model="age">
+           <button>elave et</button>
+    </form>
+          <li ng-repeat="item in telebeler">
+
+            {{item.ad}}   :  {{item.yas}}
+            
+          </li>
+     </div> -->
+    
+
+
+
+
+    <!--  Chose car from array
+    <div ng-controller="mycont">
+
+           <input type="text" ng-model="filter">
+
+          <li ng-repeat="item in masinlar |filter:filter ">
+
+            {{item.ad}}   :  {{item.il}}
+            
+          </li>
+     </div> -->
+
+
+
+      <!-- This is test for ANGUL ARRAY  -->
+      <!-- <div ng-init = "adlar = ['elman','resad','eli']"></div>
+      <li ng-repeat="item in adlar">
+      	{{item}}
+      </li>
+ -->
+</body>
+</html>

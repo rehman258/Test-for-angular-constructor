@@ -1,0 +1,10 @@
+ #container{
+      width: 500px;
+      height: 250px;
+      margin: 100px auto;
+      background: grey;
+    }
+    .done{
+    	color: white;
+    	text-decoration: line-through;
+    }
